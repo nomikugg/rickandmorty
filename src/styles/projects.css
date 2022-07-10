@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+.gridTemplate {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem;
+}
+.pen {
+  width: 400px;
+}
+.penData {
+  margin-top: 0.5rem;
+}
+
+.penContainer {
+  border-radius: 0.375rem;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  width: 400px;
+}
+.penIframe {
+  border: none;
+  height: 560px;
+  margin: -83px 0 -70px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 400px;
+  z-index: 5;
+}
+
+.show {
+  opacity: 1;
+  transition-duration: 0.15s;
+  transition-duration: 0.5s;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.flexItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mt-cards {
+  margin-top: 6rem;
+}

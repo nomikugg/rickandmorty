@@ -1,0 +1,15 @@
+.search {
+  height: 10rem;
+  justify-content: center;
+  display: flex;
+  align-items: flex-end;
+}
+.inputSearch {
+  width: 25rem;
+  height: 3rem;
+  padding: 0 1.5rem;
+}
+.buttonSearch {
+  height: 3rem;
+  width: 6rem;
+}

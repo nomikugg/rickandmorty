@@ -1,0 +1,208 @@
+/*****************Fonts *******************/
+
+/************** Logo ****************/
+.logo {
+  width: 10rem;
+}
+/* .img-search {
+  width: 1.5rem;
+} */
+
+/************* Search Container ***********/
+
+.container {
+  width: 100%;
+}
+.container-header {
+  width: 100%;
+  position: fixed;
+  z-index: 20;
+  background-color: rgb(8, 8, 8);
+  top: 0;
+}
+.wd-85 {
+  width: 85%;
+}
+.mg-auto {
+  margin: auto;
+}
+.mg-top-3 {
+  margin-top: 3rem;
+}
+body,
+input {
+  box-sizing: border-box;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.aside {
+  position: fixed;
+}
+.containerAside {
+  width: 20%;
+}
+
+/********************************************/
+
+/* # The Rotating Marker # */
+/* details summary::-webkit-details-marker {
+  display: none;
+} */
+summary::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 0.8rem;
+  transform: rotate(0);
+  transform-origin: center;
+  transition: 0.2s transform ease;
+}
+details[open] > summary:before {
+  transform: rotate(90deg);
+  transition: 0.45s transform ease;
+}
+
+/* # The Sliding Summary # */
+/* details {
+  overflow: hidden;
+} */
+/* details summary {
+  position: relative;
+  z-index: 10;
+} */
+@keyframes details-show {
+  from {
+    margin-bottom: -80%;
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+details > *:not(summary) {
+  animation: details-show 1000ms ease-in-out;
+  position: relative;
+  z-index: 1;
+  transition: all 0.8s ease-in-out;
+  color: transparent;
+  overflow: hidden;
+}
+details[open] > *:not(summary) {
+  color: inherit;
+}
+
+.sidebar {
+  border: 1px solid rgba(147, 147, 147, 0.685);
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar > details {
+  border-bottom: 1px solid rgba(147, 147, 147, 0.685);
+}
+.sidebar details:nth-last-child(1) {
+  border-bottom: none;
+}
+/* # Style 4 # */
+details.style4 summary {
+  padding-right: 2.2rem;
+  padding-left: 1rem;
+}
+details.style4 summary::before {
+  content: "×";
+  color: rgb(3, 3, 3);
+  font-size: 2rem;
+  line-height: 1rem;
+  transform: rotate(-45deg);
+  top: 1.2rem;
+  left: unset;
+  right: 0.6rem;
+}
+details[open].style4 > summary:before {
+  transform: rotate(90deg);
+  color: #3a8ec1;
+  transition: color ease 2s, transform ease 1s;
+}
+
+/* # Just Some Pretty Styles # */
+/* body {
+  
+  padding-bottom: 400px;
+} */
+img {
+  max-width: 100%;
+}
+p {
+  margin: 0;
+  padding-bottom: 10px;
+}
+p:last-child {
+  padding: 0;
+}
+details {
+  max-width: 500px;
+}
+summary {
+  /* border: 1px solid rgb(54, 54, 54); */
+  outline: none;
+  padding: 1rem;
+  display: block;
+  padding-left: 2.2rem;
+  position: relative;
+  cursor: pointer;
+}
+details[open] summary,
+summary:hover {
+  color: #3a8ec1;
+  background: rgb(215, 243, 254);
+  /* border: 1px solid #3a8ec1; */
+}
+
+details summary:hover::before {
+  color: #3a8ec1;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 35px;
+  padding: 10px;
+}
+
+/**********|Buttons| *************/
+.button {
+  border: 1px solid #1c59ff;
+  padding: 10px;
+  border-radius: 5px;
+  color: #3877ff;
+  cursor: pointer;
+}
+
+.aside {
+  width: inherit;
+}
+.tituloFiltros {
+  color: black;
+  text-align: center;
+}
+
+.containerGeneral {
+  display: flex;
+}
+
+/*************Main************/
+
+.main {
+  padding-left: 3rem;
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
